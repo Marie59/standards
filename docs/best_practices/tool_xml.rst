@@ -185,17 +185,19 @@ and the `EDAM ontology users guide <https://edamontologydocs.readthedocs.io/en/l
 Required files
 ^^^^^^^^^^^^^^
 
-The <required_files> element should contain a list of all the files that are distributed together with the tool wrapper and are referenced inside the <command>, such as:
+The ``<required_files>`` element should contain a list of all the files that are distributed together with the tool wrapper and are referenced inside the ``<command>``, such as:
+
 - Scripts (e.g. .py, .r, .sh) 
 - Config files
 
 No need to add the macros as these are resolved beforehand.
-For each required file, add an `<include>` element with a `path` attribute specifying its path relative to the XML wrapper.
+For each required file, add an ``<include>`` element with a `path` attribute specifying its path relative to the XML wrapper.
 
 Creator
 ^^^^^^^
 
-A `<creator>` element should include the people and/or organizations that developed the Galaxy tool wrapper.
+A ``<creator>`` element should include the people and/or organizations that developed the Galaxy tool wrapper.
+
 - For a person, specify the family name, given name and an identifier (e.g. their ORCID) or url (e.g. their GitHub account). Only include an email with the explicit consent of the person.
 - For an organization, specify its name and possibly the url of its website.
 
